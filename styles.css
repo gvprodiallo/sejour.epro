@@ -436,6 +436,101 @@ img {
     font-size: 0.9rem;
 }
 
+/* Service List Styles */
+.service-list-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--color-primary);
+}
+
+.service-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.service-list li::before {
+    content: "•";
+    color: var(--color-primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Estimation Form Styles */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-secondary);
+    padding: 40px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--color-border);
+}
+
+.estimation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width, .form-submit.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--color-text-main);
+}
+
+.form-control {
+    padding: 14px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-light);
+    transition: var(--transition-smooth);
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-submit .btn-primary {
+    width: 100%;
+    cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
@@ -453,6 +548,10 @@ img {
     }
 
     .services-grid, .steps-container, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .estimation-form {
         grid-template-columns: 1fr;
     }
 

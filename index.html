@@ -51,9 +51,21 @@
                     <img src="assets/service_concierge.png" alt="Service de conciergerie">
                 </div>
                 <div class="service-content">
-                    <h3>Service de Conciergerie</h3>
-                    <p>Pour les propriétaires de locations de courte durée. Nous préparons votre propriété pour offrir une expérience hôtelière 5 étoiles à vos invités. Ménage complet, gestion du linge et touches d'accueil.</p>
-                    <a href="#contact" class="link-arrow">En savoir plus &rarr;</a>
+                    <h3>Gestion de locations courte durée</h3>
+                    <p>Nous assurons une gestion opérationnelle complète de vos biens afin de garantir une expérience fluide pour vos voyageurs et une tranquillité totale pour vous.</p>
+                    <p class="service-list-title">Nos services incluent :</p>
+                    <ul class="service-list">
+                        <li>Communication avec les voyageurs</li>
+                        <li>Gestion des réservations</li>
+                        <li>Check-in et check-out</li>
+                        <li>Coordination et supervision du ménage</li>
+                        <li>Gestion du linge et blanchisserie</li>
+                        <li>Contrôle qualité après chaque séjour</li>
+                        <li>Réapprovisionnement des produits essentiels</li>
+                        <li>Audit et optimisation de vos annonces Airbnb</li>
+                        <li>Suivi opérationnel et assistance continue</li>
+                    </ul>
+                    <a href="#estimation" class="link-arrow">Estimation &rarr;</a>
                 </div>
             </div>
 
@@ -62,9 +74,20 @@
                     <img src="assets/service_commercial.png" alt="Nettoyage Commercial">
                 </div>
                 <div class="service-content">
-                    <h3>Nettoyage Commercial</h3>
-                    <p>Pour les entreprises, bureaux et espaces professionnels à Québec. Un environnement de travail immaculé qui reflète le professionnalisme de votre marque et inspire vos équipes.</p>
-                    <a href="#contact" class="link-arrow">En savoir plus &rarr;</a>
+                    <h3>Ménage Commercial</h3>
+                    <p class="service-list-title">Nos services incluent :</p>
+                    <ul class="service-list">
+                        <li>Entretien de bureaux et espaces professionnels</li>
+                        <li>Nettoyage des espaces communs</li>
+                        <li>Nettoyage des salles de bain</li>
+                        <li>Entretien des planchers et surfaces</li>
+                        <li>Vidage des poubelles et recyclage</li>
+                        <li>Réapprovisionnement des consommables</li>
+                        <li>Service adapté à vos horaires</li>
+                        <li>Contrôle qualité et suivi régulier</li>
+                        <li>Solutions personnalisées selon vos besoins</li>
+                    </ul>
+                    <a href="#estimation" class="link-arrow">Estimation &rarr;</a>
                 </div>
             </div>
         </div>
@@ -95,7 +118,49 @@
         </div>
     </section>
 
-    <section id="temoignages" class="section">
+    <section id="estimation" class="section">
+        <div class="section-header">
+            <h2>Demander une estimation gratuite</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais.</p>
+        </div>
+        <div class="form-container">
+            <form action="#" method="POST" class="estimation-form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required class="form-control" placeholder="Votre nom complet">
+                </div>
+                <div class="form-group">
+                    <label for="contact-info">Téléphone / email</label>
+                    <input type="text" id="contact-info" name="contact-info" required class="form-control" placeholder="Comment pouvons-nous vous joindre ?">
+                </div>
+                <div class="form-group">
+                    <label for="ville">Ville du bien</label>
+                    <input type="text" id="ville" name="ville" required class="form-control" placeholder="Ex: Québec, Lévis...">
+                </div>
+                <div class="form-group">
+                    <label for="service-type">Type de service :</label>
+                    <select id="service-type" name="service-type" class="form-control" required>
+                        <option value="" disabled selected>Choisissez un service</option>
+                        <option value="conciergerie">Conciergerie Airbnb</option>
+                        <option value="commercial">Ménage commercial</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="logement-type">Type de logement (optionnel)</label>
+                    <input type="text" id="logement-type" name="logement-type" class="form-control" placeholder="Ex: Condo, Maison, Bureau...">
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" placeholder="Détails supplémentaires..."></textarea>
+                </div>
+                <div class="form-submit full-width">
+                    <button type="submit" class="btn-primary">Demander une estimation</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="temoignages" class="section section-light-gray">
         <div class="section-header">
             <h2>Ce Qu'ils Disent de Nous</h2>
             <p>La confiance de nos clients est notre plus belle réussite.</p>
